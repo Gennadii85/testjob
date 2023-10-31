@@ -11,7 +11,8 @@ Padding imageSection(int index, data) {
         future: UserProvider().fetchPhotos(),
         builder: (BuildContext context, snapshot) {
           if (snapshot.hasData) {
-            List thumbnailUrl = snapshot.data!.map((e) => e).toList();
+            List thumbnailUrl =
+                snapshot.data!.map((e) => e.thumbnailUrl).toList();
             List url = snapshot.data!.map((e) => e.url).toList();
             return InkResponse(
               onTap: () {
