@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:testjob/screen.dart';
+
+import 'first_option/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(GoodsDetails());
 }
