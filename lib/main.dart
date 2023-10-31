@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'first_option/home_page.dart';
+import 'package:testjob/my_app.dart';
 
 void main() {
-  runApp(GoodsDetails());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
 }

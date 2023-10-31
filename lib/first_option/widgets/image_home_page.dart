@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:testjob/first_option/model/image_network.dart';
-import '../../apiProvider/user_api.dart';
+import '../../services/user_api.dart';
 import 'cart_photos.dart';
 
 Padding imageSection(int index, data) {
   return Padding(
       padding: const EdgeInsets.fromLTRB(30, 15, 30, 15),
       child: FutureBuilder(
-        future: UserProvider().fetchPhotos(http.Client()),
+        future: UserProvider().fetchPhotos(),
         builder: (BuildContext context, snapshot) {
           if (snapshot.hasData) {
-            List thumbnailUrl =
-                snapshot.data!.map((e) => e.thumbnailUrl).toList();
+            List thumbnailUrl = snapshot.data!.map((e) => e).toList();
             List url = snapshot.data!.map((e) => e.url).toList();
             return InkResponse(
               onTap: () {
