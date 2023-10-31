@@ -1,6 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
 import '../model/text_row.dart';
 
 Column description(int index, List<dynamic> resData, String address) {

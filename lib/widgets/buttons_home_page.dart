@@ -16,6 +16,7 @@ Container buttonsRow(controller) {
           Row(children: [
             IconButton(
               onPressed: () {
+                // здесь можно было использовать Cubit но у виджета есть свой метод для этого
                 controller.previousPage(
                     duration: const Duration(milliseconds: 500),
                     curve: Curves.linear);

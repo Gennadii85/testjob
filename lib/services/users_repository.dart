@@ -1,7 +1,6 @@
 import 'package:testjob/services/user_api.dart';
-
-import '../first_option/data_json/json_convert_photos.dart';
-import '../first_option/data_json/json_convert_users.dart';
+import '../data_json/json_convert_photos.dart';
+import '../data_json/json_convert_users.dart';
 
 class UserRepository {
   final UserProvider _userProvider = UserProvider();

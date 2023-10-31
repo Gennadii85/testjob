@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-Flexible nameRow(
-    BuildContext context, AsyncSnapshot<dynamic> snapshot, int index) {
+Flexible nameRow(data, index) {
   return Flexible(
       child: Padding(
           padding: const EdgeInsets.fromLTRB(15, 15, 8, 5),
@@ -9,8 +8,8 @@ Flexible nameRow(
             /*
             Ниже отображается имя пользователя полностью, может занимать несколько строк.
             */
-            Text(snapshot.data![index].name.toString(),
-                maxLines: 10,
+            Text(data[index].name.toString(),
+                maxLines: 4,
                 style: const TextStyle(
                     fontSize: 16,
                     color: Color(0xffff8860),

@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:testjob/first_option/model/image_network.dart';
-import '../../services/user_api.dart';
+import 'package:testjob/model/image_network.dart';
+import '../services/user_api.dart';
 import 'cart_photos.dart';
 
-Padding imageSection(int index, data) {
+Padding imageSection(int index) {
   return Padding(
       padding: const EdgeInsets.fromLTRB(30, 15, 30, 15),
+      /*
+      FutureBuilder использован в демонстрационных целях 
+      как альтернатива Bloc в процессе обработки состояния
+      */
       child: FutureBuilder(
         future: UserProvider().fetchPhotos(),
         builder: (BuildContext context, snapshot) {

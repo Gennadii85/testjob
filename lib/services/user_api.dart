@@ -1,10 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import '../data_json/json_convert_photos.dart';
+import '../data_json/json_convert_users.dart';
 
-import '../first_option/data_json/json_convert_photos.dart';
-import '../first_option/data_json/json_convert_users.dart';
-
-// рекомендации документации использовать изолят
 class UserProvider {
   Future<List<User>> fetchUsers() async {
     final response =
