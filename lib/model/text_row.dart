@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//
 class TextRow extends StatelessWidget {
   final String text;
   const TextRow({Key? key, required this.text}) : super(key: key);

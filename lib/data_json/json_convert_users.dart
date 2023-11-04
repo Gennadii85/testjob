@@ -1,5 +1,5 @@
 //  https://jsonplaceholder.typicode.com/users
-
+//
 //* Генерация при помощи сервиса. Можно конечно вручную, но это неоправданно долго.
 class User {
   int? id;

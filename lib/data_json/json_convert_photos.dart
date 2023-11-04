@@ -1,7 +1,7 @@
 //https://jsonplaceholder.typicode.com/albums/1/photos
 
 //* Можно конечно вручную, но это неоправданно долго.
-
+//
 class Photos {
   final int albumId;
   final int id;

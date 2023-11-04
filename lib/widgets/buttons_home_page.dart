@@ -8,6 +8,7 @@ Container buttonsRow(controller) {
   Переключение должно быть цикличным и не ограниченным кол-вом карточек в списке. 
   Переключатель не меняет свое положение при изменении карточки
     */
+  //
   return Container(
       color: const Color(0xffe6eae5),
       child: Row(

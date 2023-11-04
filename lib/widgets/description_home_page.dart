@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import '../model/text_row.dart';
 
+//
 Column description(int index, List<dynamic> resData, String address) {
   return Column(children: [
     Row(children: [

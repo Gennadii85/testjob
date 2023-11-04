@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//
 class ImageNetwork extends StatelessWidget {
   const ImageNetwork({Key? key, required this.data, required this.index})
       : super(key: key);

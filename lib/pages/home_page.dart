@@ -6,6 +6,7 @@ import '../widgets/description_home_page.dart';
 import '../widgets/image_home_page.dart';
 import '../widgets/namerow_home_page.dart';
 
+//
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
 

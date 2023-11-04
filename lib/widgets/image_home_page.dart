@@ -3,6 +3,7 @@ import 'package:testjob/model/image_network.dart';
 import '../services/user_api.dart';
 import 'cart_photos.dart';
 
+//
 Padding imageSection(int index) {
   return Padding(
       padding: const EdgeInsets.fromLTRB(30, 15, 30, 15),
